@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: LKDkwQGO18j8g94iT+0Kv4AS8Id+s5yR2uWp/qLcPnEc86Z5tfBqCTFDyjk5ngCU/12c3G+ynKkEuxzNZk9rHLbJoJ+4uRNS2Z+HrTrd7gxywKxv8cp/FWmkIvpgrirusluBGNJmhg59K3D7OH7WXZQOo64TMTLfjDsX7bhmtuMcHH+UZ1jVx2NnMEuqkd55YBojHiskPApcrmuVBOE3UJd8OGWkDS5o7gDXRy6c477ZHENu7VLI3TQDW31l8qr66fzzE98tdpVCJN733zQ9Xq1LdHYh9NX4DsdbXEMArYns4Ql5kH8x6+/Q5mUkTok7+hdarE8qbKuvhznu6nNG/Iybcq2yBwjczLERPGWUMdDaUF/ldKzOnYRgSkdAB6I8upwS+0AGAxIZpjXzwQb/zEj7B1opQJ8pEXAXrmIn1M2+CkUJ6jsueOfv2je60yyPCe2j0Y1d/jVDveXlYFHdn9VEfW7HCB1ydWsH9ukbcNtAAdLiROmkKQATSBLPNNrTrTtlwLjEcIZlS2wzC++kfNVH/p1nfOFAkvDfrfG6Ih0usC1icehhHhio7D4Nuk6QzypsnpQvB7MPqitFU0aF8AHIb/aNCV/KzmfLC6uAG8Aq+qW18Ke3wYTvDUsno9ZLnaAmw8R1SNkg/8EZfegPL6lAPVCrxK96LQK1OAKzqxA=
+  app: quiet-brook-40411
+  on:
+    repo: jbvance/react-trello-testing
